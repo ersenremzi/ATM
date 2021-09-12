@@ -21,13 +21,13 @@ public class Atm {
                     case 2:
                     System.out.println("Miktar giriniz");
                     int miktar = s.nextInt();
-                    bakiye = miktar;
+                    bakiye = bakiye - miktar;
                         System.out.println("Yeni bakiye " + bakiye + "TL'dir.");
                         break;
                 case 3 :
                     System.out.println("Miktar giriniz");
                     int miktar1 = s.nextInt();
-                    bakiye = miktar1;
+                    bakiye = miktar1 + bakiye;
                     System.out.println("Yeni bakiye " + bakiye + "TL'dir.");
                     break;
                 default:
